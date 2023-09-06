@@ -1,0 +1,21 @@
+$primary-color: #103778;
+$secondary-color: #0593A2;
+$primary-dark-color: #020100;
+$secondary-dark-color: #080b11;
+$light-color: #f5f5f5;
+
+// Tailwind breakpoints
+$sm: '640px';
+// => @media (min-width: 640px) { ... }
+
+$md: '768px';
+// => @media (min-width: 768px) { ... }
+
+$lg: '1024px';
+// => @media (min-width: 1024px) { ... }
+
+$xl: '1280px';
+// => @media (min-width: 1280px) { ... }
+
+$xxl: '1536px';
+// => @media (min-width: 1536px) { ... }

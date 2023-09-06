@@ -1,0 +1,38 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+  @apply scroll-smooth;
+  font-family: "Inter", sans-serif;
+}
+
+input, textarea, select, button {
+  font-size: 16px; /* Set a base font-size to prevent zooming */
+  max-height: 100vh; /* Prevent the page from resizing on focus */
+}
+
+.contain {
+  &-content {
+    @apply mt-20 mx-4 md:mx-10;
+  }
+  &-flex {
+    @apply flex items-center justify-center;
+  }
+  @apply mt-20 px-4 md:px-10;
+}
+
+.parallax_overlay {
+  background-color: #f5f5f5;
+  opacity: 0.9;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
