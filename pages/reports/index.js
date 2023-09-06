@@ -22,8 +22,6 @@ const Reports = () => {
   const [selectedDateFilter, setSelectedDateFilter] = useState("");
   const [selectedCourseCodeFilter, setSelectedCourseCodeFilter] = useState("");
 
-  console.log("Selected Date Filter:" + selectedCourseCodeFilter);
-
   //retrieve current user
   useEffect(() => {
     if (session?.user?.uid) {
@@ -76,7 +74,6 @@ const Reports = () => {
 
       setAttendanceRecords(attendanceData);
     } catch (error) {
-      console.error("Error getting attendance:", error);
       throw error;
     }
   }
@@ -119,7 +116,6 @@ const Reports = () => {
 
         setCoursesRecords(attendanceData);
       } catch (error) {
-        console.error("Error getting attendance:", error);
         throw error;
       }
     }
@@ -142,7 +138,6 @@ const Reports = () => {
 
         setStudents(studentData);
       } catch (error) {
-        console.error("Error fetching students:", error);
         throw error;
       }
     }

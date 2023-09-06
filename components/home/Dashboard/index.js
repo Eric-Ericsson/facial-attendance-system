@@ -151,7 +151,6 @@ const Dashbaord = () => {
 
         setAttendanceRecords(attendanceData);
       } catch (error) {
-        console.error("Error getting attendance:", error);
         throw error;
       }
     }
